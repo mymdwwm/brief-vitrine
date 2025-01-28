@@ -1,0 +1,16 @@
+/* Lien vers les autres pages */
+@import url(styleB1.css);
+@import url(styleB1page2.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{   /* Palette */
+    font-family: "Inter", serif;
+    
+--vertfonce:rgb(5 120 88 1);
+--rouge:rgb(219 39 39 1);
+--vertbtn:rgb(13 185 129 1);
+--vertdeau:rgb(224 252 238 1);
+--grisbtn:rgb(243 244 246 1);
+--bleufooter:rgb(31 41 55 1);
+}
