@@ -4,35 +4,178 @@
 /* Par Section  */
 
 #hero{
+background-image: url(/imageB1/chiens-fond.png);
+background-position-y:center;
+background-repeat: no-repeat;
+background-size: cover;
+flex-direction: column;
+justify-content: center;
+color: white;
+height: 585px;
 
 }
 
+#S1{
+    flex-direction: column;
+}
 
-#S4 div{
+#S3{
+    flex-direction: column;
+}
+
+#S4{
+    flex-direction: column;
+}
+
+.card{
     background-color: white;
-    
+    border-radius: 11px;
+   padding: 2vw;
+   margin: 1vw;
+    width: 813px;
+    height: 153px;
 }
 
 
 /* Par Titre */
 
-header{
+h4{
+    color: white;
+}
+
+h2{
     
 }
 
 
-/* Par Éléments */
+/* Par cLASS */
 
 .fondvert{
     background-color: var(--vertdeau);
+    justify-content: center;
+    padding: 4vw 0 4vw 0;
 }
 
 
-.centre,header, a{
+figure,.icon,#S4,#S3,.fondvert,.mini ,.centre,header, 
+a,.temoin, .row{
     display: flex;
     align-items: center;
 }
 
 .grid{
     display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 20px 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.contour{
+    flex-direction: column;
+    border: solid 2px var(--grisbtn);
+    border-radius: 7px;
+}
+
+.ligne{
+   
+}
+
+.fondcham{
+    background-image: url(/imageB1/chien-champ.png);
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 15px ;
+    border-bottom-left-radius: 15px;
+    height: 392px;
+    width: 588px;
+}
+
+.fondb{
+    background-color: white;
+    padding: 4vw;
+    height: 392px;
+    width: 588px;
+}
+
+
+.luna{
+    background-image: url(/imageB1/chien-luna.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 1066px;
+    height: 471px;
+    border-radius: 13px;
+    
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+    grid-column: 1/4;
+    grid-row: 2/5;
+}
+.lunamin{
+    background-image: url(/imageB1/chien-luna.png);
+}
+.oscarmin{
+    background-image: url(/imageB1/chat-papillon.png);
+}
+.maxmin{
+    background-image: url(/imageB1/chien-max.png);
+}
+
+.container{
+    flex-direction: column;
+    
+}
+
+
+
+
+/* Par Éléments */
+
+.grid h2{
+    grid-row: 1/2;
+}
+
+button{
+    border: none;
+    border-radius: 7px;
+    padding: 7px 9px 7px 9px;
+}
+
+figure{
+ flex-direction: column;
+}
+
+.tem{
+    height: 150px;
+    width:373px ;
+}
+
+.tem1{
+background-image: url(/imageB1/chat-et-chien.png);
+}
+
+.temoin{
+flex-direction: column;
+
+}
+
+
+.icone{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.mini{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    border-radius: 11px;
+    width: 349px;
+    height: 128px;
+    grid-row: 5/6;
 }
