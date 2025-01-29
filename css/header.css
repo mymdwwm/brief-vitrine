@@ -1,0 +1,33 @@
+
+
+
+header{
+    justify-content: space-between;
+   
+    width:100%;
+    padding: 1.5vw 4vw;
+    background-color: var(--vertfonce);
+
+
+}
+
+header a{
+    flex-direction: row;
+    color: white;
+}
+
+
+
+/* Par Élements */
+
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}

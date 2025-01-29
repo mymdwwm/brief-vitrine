@@ -1,5 +1,38 @@
 
 
+
+/* Par Section  */
+
 #hero{
+
+}
+
+
+#S4 div{
+    background-color: white;
     
+}
+
+
+/* Par Titre */
+
+header{
+    
+}
+
+
+/* Par Éléments */
+
+.fondvert{
+    background-color: var(--vertdeau);
+}
+
+
+.centre,header, a{
+    display: flex;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
 }
