@@ -329,3 +329,17 @@ flex-direction: column;
 .mini:hover{
     border: solid 4px var(--vertbtn);
 }
+
+#reponse1,
+#reponse2,
+#reponse3{
+  
+}
+
+
+.rouge{
+    background-color: var(--quizzfaux);
+}
+.vert{
+    background-color: var(--quizzvrai);
+}
