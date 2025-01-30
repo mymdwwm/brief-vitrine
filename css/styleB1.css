@@ -4,19 +4,26 @@
 /* Par Section  */
 
 #hero{
-background-image: url(/imageB1/chiens-fond.png);
+
+background-image: url(/imageB1/chiens-fondso.png);
 background-position-y:center;
 background-repeat: no-repeat;
 background-size: cover;
 flex-direction: column;
 justify-content: center;
 color: white;
-height: 585px;
+height: 78vh;
+
 
 }
 
 #S1{
     flex-direction: column;
+    margin: 2vw;
+}
+
+#S2{
+    padding: 4vw 0 4vw 0;
 }
 
 #S3{
@@ -25,6 +32,11 @@ height: 585px;
 
 #S4{
     flex-direction: column;
+    padding-bottom: 4vw;
+}
+
+#S6,#S3{
+    padding-bottom: 4vw;
 }
 
 .card{
@@ -39,12 +51,24 @@ height: 585px;
 
 /* Par Titre */
 
+
+h1{
+    font-size: 68px;
+    padding: 15px;
+}
+
+
 h4{
     color: white;
 }
 
+h3{
+    font-size: 33px;
+}
+
 h2{
-    
+font-size: 32px;
+   padding: 3vw 0 2vw 0; 
 }
 
 
@@ -53,12 +77,13 @@ h2{
 .fondvert{
     background-color: var(--vertdeau);
     justify-content: center;
-    padding: 4vw 0 4vw 0;
 }
 
 
-figure,.icon,#S4,#S3,.fondvert,.mini ,.centre,header, 
-a,.temoin, .row{
+.ligne,#S4,#S3,.fondvert,.mini ,
+.centre,header, a,.temoin, .row,.contour,.shadow,
+.buts,.card div,footer,#S7,form,form button,
+.icone{
     display: flex;
     align-items: center;
 }
@@ -75,10 +100,55 @@ a,.temoin, .row{
     flex-direction: column;
     border: solid 2px var(--grisbtn);
     border-radius: 7px;
+    height: 150px;
+    padding: 2.5vw;
 }
 
-.ligne{
+.contour:hover{
+    border: solid 2px var(--vertbtn);
+    background-color: var(--vertdeau);
+}
+
+.shadow{
+    flex-direction: column;
    
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    padding: 0 2vw 3vw 2vw;
+    margin: 1vw 0 2vw 0; 
+}
+
+.full{
+    justify-content: center;
+    width: 96%;
+}
+
+
+
+.ligne{
+   gap: 20px;
+   text-align: center;
+   padding:2vw;
+}
+
+.ligne p{
+    font-weight: 300;
+}
+
+.don{
+    padding-bottom: 2vw;
+}
+
+.don button{
+font-size: 15px;
+padding: 0.8vw;
+margin: 0.5vw;
+}
+
+.don button:hover{
+    color: white;
+    background-color: var(--vertbtn);
+    font-weight: 500;
 }
 
 .fondcham{
@@ -87,33 +157,54 @@ a,.temoin, .row{
     background-size: cover;
     border-top-left-radius: 15px ;
     border-bottom-left-radius: 15px;
+}
+
+.fond{
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
     height: 392px;
     width: 588px;
 }
 
 .fondb{
     background-color: white;
-    padding: 4vw;
-    height: 392px;
-    width: 588px;
+    padding: 0 3vw 3vw 3vw;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.fondb p{
+    font-size: 14px;
 }
 
 
 .luna{
-    background-image: url(/imageB1/chien-luna.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), 
+    url("/imageB1/chien-luna.png") center/cover no-repeat;
+    padding: 3vw;
     width: 1066px;
     height: 471px;
     border-radius: 13px;
-    
+    color: white;
+    font-size: 17px;
+    font-weight: 200;
     display: flex;
-    align-items: flex-end;
-    flex-direction: column-reverse;
+    justify-content: end;
+    flex-direction: column;
     grid-column: 1/4;
     grid-row: 2/5;
+    gap: 10px;
 }
+
+.luna h4{
+    font-size: 22px;
+}
+
+.date{
+    font-weight: 300;
+    color: gray;
+    font-size: 13px;
+}
+
 .lunamin{
     background-image: url(/imageB1/chien-luna.png);
 }
@@ -126,16 +217,51 @@ a,.temoin, .row{
 
 .container{
     flex-direction: column;
-    
+}
+
+.icone{
+    width: 100%;
+justify-content: space-around;
+text-align: center;
+padding: 6vw;
+}
+
+.icone img{
+    height: 47px;
+    margin-bottom: 1vw;
+}
+
+small{
+    padding: 1vw;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+/* Par Éléments */
+#hero p{
+    font-size:26px ;
 }
 
 
-
-
-/* Par Éléments */
-
 .grid h2{
     grid-row: 1/2;
+}
+
+.card button{
+    height: 68px;
+    width: 49%;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 22px;
+}
+
+.card div{
+    justify-content: space-between;
+}
+
+.card p{
+    font-size: 18px;
+    padding-bottom: 0.5vw;
 }
 
 button{
@@ -144,17 +270,36 @@ button{
     padding: 7px 9px 7px 9px;
 }
 
-figure{
- flex-direction: column;
-}
-
 .tem{
     height: 150px;
     width:373px ;
+background-size: cover;
+background-position: center;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+
+.descri{
+    height: 150px;
+    width:373px ; 
+    border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+font-size: 14px;
+font-weight: 300;
+padding: 2vw;
+box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2)
 }
 
 .tem1{
 background-image: url(/imageB1/chat-et-chien.png);
+}
+
+.tem2{
+    background-image: url(/imageB1/chat-temoignage.png);
+}
+
+.tem3{
+    background-image: url(/imageB1/humain-chat.png);
 }
 
 .temoin{
@@ -162,11 +307,12 @@ flex-direction: column;
 
 }
 
-
-.icone{
-    display: flex;
-    justify-content: space-between;
+.row{
+    align-items: center;
+    gap:2vw
 }
+
+
 
 
 .mini{
@@ -178,4 +324,8 @@ flex-direction: column;
     width: 349px;
     height: 128px;
     grid-row: 5/6;
+}
+
+.mini:hover{
+    border: solid 4px var(--vertbtn);
 }

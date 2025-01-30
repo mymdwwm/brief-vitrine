@@ -1,0 +1,48 @@
+#S7{
+    padding-bottom: 4vw;
+    margin: 2vw;
+}
+
+#S7, form{
+    flex-direction: column;
+}
+
+#S7 div{
+    height: 550px;
+    width: 802px;
+   
+    padding: 3vw;
+}
+
+form label,
+input,
+select,
+textarea,
+form button{
+    width: 100%;
+}
+
+input,select,textarea{
+    border: solid 1px var(--grisbtn);
+    border-radius:4px
+}
+
+input,select{
+    height: 37px;
+}
+
+textarea{
+    height: 140px;
+}
+
+label , form button{
+    margin-top: 2vw;
+}
+
+form button{
+    background-color: var(--vertfonce);
+    color:white;
+    justify-content: center;
+}
+
+

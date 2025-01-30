@@ -3,8 +3,26 @@
 footer{
     color: white;
     background-color: var(--bleufooter);
+    height: 145px;
+    justify-content: space-around;
 }
 
 footer a{
     color: white;
+    padding-bottom: 2vw;
+    
+}
+
+footer li{
+    width: 24vw;
+}
+
+footer ul{
+    gap: 4vw;
+}
+
+
+.tin, .centre li p{
+    font-weight: 200;
+    font-size: 14px;
 }

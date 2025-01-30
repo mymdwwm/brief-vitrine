@@ -26,3 +26,6 @@ body{
     width: 84,72%;
    
 }
+ button,a:hover{
+    cursor: pointer;
+ }
