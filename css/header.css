@@ -52,6 +52,16 @@ font-size: 15px;
 border: solid 5px var(--rouge);
 }
 
+.redbtn:hover{
+    background-color: coral;
+    border: solid 5px coral;
+}
+
+.redbtn:focus{
+    background-color: brown;
+    border: solid 5px brown;
+}
+
 .redbtn img,
 form button img{
 height: 21px;
