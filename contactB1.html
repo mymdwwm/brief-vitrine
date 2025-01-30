@@ -6,7 +6,7 @@
     <title>Contact</title>
     <!-- LIENS -->
     <link rel="stylesheet" href="css/global.css">
-    <script src="indexB1.js"></script>
+    <script src="contactB1.js"></script>
 
 </head>
 <body>
@@ -28,24 +28,31 @@
     <main>
         <section id="S7">
             <h2>Contactez-nous</h2>
-        <div>
-            <form>
+        <div class="taille">
+            <form onsubmit="return confirmation()">
+                <!--NOM-->
                 <label for="nom">Nom</label>
-                <input type="text">
-
-                <label for="nom">Email</label>
-                <input type="text">
-
-                <label for="nom">Sujet</label>
-                <select name="" id="">
+                <input type="text" id="nom">
+                <div id="errnom" class="err"></div>
+                <!--EMAIL-->
+                <label for="email">Email</label>
+                <input type="text" id="email">
+                <div id="erremail" class="err"></div>
+                <!--SUJET-->
+                <label for="sujet">Sujet</label>
+                <select name="sujet" id="sujet">
                     <option value="">Question sur les dons</option>
-                    <option value="">Localisé son refuge</option>
+                    <option value="">Faire un don</option>
+                    <option value="">Devenir bénévole</option>
+                    <option value="">Question générale</option>
                 </select>
-
-                <label for="nom">Message</label>
-                <textarea name="message" id=""></textarea>
-
-                <button><img src="assetB1/sendbl.svg" alt="">Envoyer</button>
+                <div id="errsujet" class="err"></div>
+                <!--MESSAGE-->
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+                <div id="errmess" class="err"></div>
+                <!--ENVOIE-->
+                <button type="submit"><img src="assetB1/sendbl.svg" alt="icon envoie">Envoyer</button>
             </form>
         </div>    
         </section>

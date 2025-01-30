@@ -7,7 +7,7 @@
     flex-direction: column;
 }
 
-#S7 div{
+.taille{
     height: 550px;
     width: 802px;
    
@@ -45,4 +45,7 @@ form button{
     justify-content: center;
 }
 
-
+.err{
+    color: var(--rouge);
+    font-size: 10px;
+}
