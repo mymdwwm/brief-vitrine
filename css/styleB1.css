@@ -1,41 +1,39 @@
-
-
-
 /* Par Section  */
 
-#hero{
+#hero {
 
-background-image: url(/imageB1/chiens-fondso.png);
-background-position-y:center;
-background-repeat: no-repeat;
-background-size: cover;
-flex-direction: column;
-justify-content: center;
-color: white;
-height: 78vh;
+    background-image: url(/imageB1/chiens-fondso.png);
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    height: 78vh;
 
 
 }
 
-#S1{
+#S1 {
     flex-direction: column;
     margin: 2vw;
 }
 
-#S2{
+#S2 {
     padding: 4vw 0 4vw 0;
 }
 
-#S3{
+#S3 {
     flex-direction: column;
 }
 
-#S4{
+#S4 {
     flex-direction: column;
     padding-bottom: 4vw;
 }
 
-#S6,#S3{
+#S6,
+#S3 {
     padding-bottom: 4vw;
 }
 
@@ -43,51 +41,72 @@ height: 78vh;
 /* Par Titre */
 
 
-h1{
-    font-size: clamp(22px,6.8vw,68px);
+h1 {
+    font-size: clamp(22px, 6.8vw, 68px);
     padding: 15px;
 }
 
 
-h4{
+h4 {
     color: white;
 }
 
-h3{
+h3 {
     font-size: 33px;
 }
 
-h2{
-font-size: clamp(18px,5vw,32px);
-   padding: 3vw 0 2vw 0; 
+h2 {
+    font-size: clamp(18px, 5vw, 32px);
+    padding: 3vw 0 2vw 0;
 }
 
 
 /* Par cLASS */
 
-.fondvert{
+.fondvert {
     background-color: var(--vertdeau);
     justify-content: center;
 }
 
-
-.ligne,#S4,#S3,.fondvert,.mini ,
-.centre,header, a,.temoin, .row,.contour,.shadow,
-.buts,.card div,footer,#S7,form,form button,
-.icone{
+#S4,
+#S3,
+.fondvert,
+.mini,
+.centre,
+header,
+a,
+.temoin,
+.row,
+.contour,
+.shadow,
+.buts,
+.card div,
+footer,
+#S7,
+form,
+form button,
+.icone {
     display: flex;
     align-items: center;
 }
-
-.grid{
+/*
+.grid {
     display: grid;
     grid-template-columns: 350px 350px 350px;
     grid-template-rows: 20px 1fr 1fr 1fr 1fr;
     row-gap: 10px;
     column-gap: 10px;
 }
+*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(clamp(200px, 30vw, 350px), 1fr));
+    grid-template-rows: 20px 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
 
-.contour{
+.contour {
     flex-direction: column;
     border: solid 2px var(--grisbtn);
     border-radius: 7px;
@@ -95,79 +114,79 @@ font-size: clamp(18px,5vw,32px);
     padding: 2.5vw;
 }
 
-.contour:hover{
+.contour:hover {
     border: solid 2px var(--vertbtn);
     background-color: var(--vertdeau);
 }
 
-.contour:focus{
+.contour:focus {
     border: solid 2px var(--vertbtn);
-    background-color: var(--vertdeau); 
+    background-color: var(--vertdeau);
 }
 
-.shadow{
+.shadow {
     flex-direction: column;
-   
+
     box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     padding: 0 2vw 3vw 2vw;
-    margin: 1vw 0 2vw 0; 
+    margin: 1vw 0 2vw 0;
 }
 
-.full{
+.full {
     justify-content: center;
     width: 96%;
 }
 
-
-
-.ligne{
-   gap: 20px;
-   text-align: center;
-   padding:2vw;
+.ligne {
+    gap: 20px;
+    text-align: center;
+    padding: 2vw;
+    display: flex;
 }
 
-.ligne p{
+.ligne p {
     font-weight: 300;
 }
 
-.don{
+.don {
     padding-bottom: 2vw;
 }
 
-.don button{
-font-size: 15px;
-padding: 0.8vw;
-margin: 0.5vw;
+.don button {
+    font-size: 15px;
+    padding: 1vw;
+    margin: 0.5vw;
+    
 }
 
-.don button:hover{
+.don button:hover {
     color: white;
     background-color: var(--vertbtn);
     font-weight: 500;
 }
 
-.don button:focus{
+.don button:focus {
     color: white;
     background-color: var(--vertbtn);
     font-weight: 500;
 }
 
-.fondcham{
+.fondcham {
     background-image: url(/imageB1/chien-champ.png);
     background-position: center;
     background-size: cover;
-    border-top-left-radius: 15px ;
+    border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
 
-.fond{
+.fond {
     box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
-    height: 392px;
+    height: 430px;
     width: 588px;
 }
 
-.fondb{
+.fondb {
     background-color: white;
     padding: 0 3vw 3vw 3vw;
     border-top-right-radius: 15px;
@@ -175,12 +194,14 @@ margin: 0.5vw;
 }
 
 .fondb p{
-    font-size: clamp(10px,2rem,14.5px);
+    font-size: 15px;
+    color: rgb(36, 35, 35);
+    letter-spacing: 0, 5px;
 }
 
 
-#luna{
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), 
+#luna {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
     url("/imageB1/chien-luna.png") center/cover no-repeat;
     padding: 3vw;
     width: 1066px;
@@ -197,13 +218,13 @@ margin: 0.5vw;
     gap: 10px;
 }
 
-#luna h4{
+#luna h4 {
     font-size: 22px;
 }
 
 
 
-.date{
+.date {
     font-weight: 300;
     color: gray;
     font-size: 13px;
@@ -211,58 +232,61 @@ margin: 0.5vw;
 
 
 
-.lunamin{
+.lunamin {
     background-image: url(/imageB1/chien-luna.png);
 }
-.oscarmin{
+
+.oscarmin {
     background-image: url(/imageB1/chat-papillon.png);
 }
-.maxmin{
+
+.maxmin {
     background-image: url(/imageB1/chien-max.png);
 }
 
-.container{
+.container {
     flex-direction: column;
 }
 
-.icone{
+.icone {
     width: 100%;
-justify-content: space-around;
-text-align: center;
-padding: 6vw;
+    justify-content: space-around;
+    text-align: center;
+    padding: 6vw;
 }
 
-.icone img{
+.icone img {
     height: 47px;
     margin-bottom: 1vw;
 }
 
-small{
+small {
     padding-top: 1vw;
     font-size: 14px;
     font-weight: 200;
 }
 
 /* Par Éléments */
-#hero p{
-    font-size:clamp(11px,3.5vw,26px) ;
+#hero p {
+    font-size: clamp(11px, 3.5vw, 26px);
 }
 
 
-.grid h2{
+.grid h2 {
     grid-row: 1/2;
 }
 
-.card{
+.card {
     background-color: white;
     border-radius: 11px;
-   padding: 2vw;
-   margin: 1vw;
-    width: 813px;
-    height: 153px;
+    padding: 2vw;
+    margin: 1vw;
+    width: clamp(720px,70vw,813px);
+    height: clamp(143px,20vh,153px);
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
 }
 
-.card button{
+.card button {
     height: 68px;
     width: 49%;
     font-size: 16px;
@@ -270,93 +294,93 @@ small{
     padding-left: 22px;
 }
 
-.card div{
+.card div {
     justify-content: space-between;
 }
 
-.card p{
+.card p {
     font-size: 18px;
     padding-bottom: 0.5vw;
 }
 
-button{
+button {
     border: none;
     border-radius: 7px;
     padding: 7px 9px 7px 9px;
 }
 
-.tem{
+.descri {
     height: 150px;
-    width:373px ;
-background-size: cover;
-background-position: center;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
-}
-
-.descri{
-    height: 150px;
-    width:373px ; 
+    width: 373px;
     border-bottom-left-radius: 10px;
-border-bottom-right-radius: 10px;
-font-size: 14px;
-font-weight: 300;
-padding: 2vw;
-box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2)
+    border-bottom-right-radius: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 2vw;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2)
 }
 
-.tem1{
-background-image: url(/imageB1/chat-et-chien.png);
+.tem {
+    height: 150px;
+    width: 373px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0 0;
 }
 
-.tem2{
+.tem1 {
+    background-image: url(/imageB1/chat-et-chien.png);
+}
+
+.tem2 {
     background-image: url(/imageB1/chat-temoignage.png);
 }
 
-.tem3{
+.tem3 {
     background-image: url(/imageB1/humain-chat.png);
 }
 
-.temoin{
-flex-direction: column;
+.temoin {
+    flex-direction: column;
 
 }
 
-.row{
+.row {
     align-items: center;
-    gap:2vw
+    gap: 2vw
 }
 
-.mini{
+.mini {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
     border-radius: 11px;
-    width: 349px;
-    height: 128px;
+    width: clamp(100px,50vw,349px);
+    
     grid-row: 5/6;
 }
 
-.mini:hover{
+.mini:hover {
     border: solid 4px var(--vertbtn);
 }
 
-.mini:focus{
+.mini:focus {
     border: solid 4px var(--vertbtn);
 }
 
 
 
-.rouge{
+.rouge {
     background-color: var(--quizzfaux);
 }
-.vert{
+
+.vert {
     background-color: var(--quizzvrai);
 }
 
 
-.display{
+.display {
     display: none;
 }
 
@@ -368,44 +392,91 @@ flex-direction: column;
 /* QUIZZ */
 
 
-.feedback{
+.feedback {
     display: none;
 }
 
-.correct{
+.correct {
     border-radius: 6px;
     padding: 1vw;
     background-color: var(--quizzvrai);
-    
+
 }
 
-.incorrect{
+.incorrect {
     border-radius: 6px;
     padding: 1vw;
     background-color: var(--quizzfaux);
-    
+
 }
 
-@media (max-width : 768px){
-    #hero{
-       background-image: url(/imageB1/chiens-fondresp.png);
+@media (max-width : 768px) {
+
+    /* Section hero  fond */
+    #hero {
+        background-image: url(/imageB1/chiens-fondresp.png);
     }
-    .ligne{
+
+
+
+    .don button{
+        padding: 1vw;
+    }
+
+    /* Section 2 : Mission */
+    .ligne {
         flex-direction: column;
+        width: 90vw;
     }
-    #S2{
+
+    #S2 {
         flex-direction: column;
+        padding: 8vw 0 8vw 0;
+    
     }
-    .fond{
+
+    .fond {
         width: 90%;
     }
-    .fondcham{
+
+    .fondcham {
         border-radius: 15px 15px 0 0;
 
     }
-    .fondb{
+
+    .fondb {
         border-radius: 0 0 15px 15px;
-        padding: 6vh;
+        padding: 0 3rem 0 3rem;
     }
-    
+    .fondb p{
+        font-size: 20px;
+    }
+    .icone{
+        display: flex;
+        flex-direction: row;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .tem,.descri{
+        width: 90vw;
+        height: 40vh;
+        font-size: 23px;
+    }
+    .descri p{
+        padding: 35px;
+    }
+
+    /* Bat de page : footer */
+   
+    footer ul{
+        flex-direction: column;
+    }
+    footer li{
+        width: 900px;
+    }
+   
+
+
 }

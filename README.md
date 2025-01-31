@@ -23,22 +23,33 @@ Brief ECF 1 - Quatre pattes a besoin d'une nouvelle vitrine
 - Réaliser la maquette sur figma (6H)
 - Intégration HTML seul (2H)
 - Intégration CSS (7H)
-- Consignes Javascript (3H ...)
+- Consignes Javascript (9H ...)
     - Fomulaire complet !
     - Diaporama satisfaisant
+    - Première version du JS (estimation fin le 30/01 17:30 - fin 23:30)
     - Une catégorie de don (boutton) fait en focus pas l'autre
--Début du responsive
+- Début du responsive (3h)
+    - hero : ok
+    - mission : ok
+    - quizz : ok-
+    - témoignane : ok
 
 
 
 Ce qu'il reste à faire : 
 
 - Revoir les détails du CSS
-- Faire le responsive CSS en version mobile 
-- Terminer une première version du JS (estimation fin le 30/01 17:30 - fin 23:30)
     - Revoir les effet de bouton de la partie "DON"
     - Réinitialiser ces bouton en js
     - Revoir les couleurs des reponses du "QUIZZ"
+
+- Faire le responsive CSS en version mobile 
+    - Footer en column full width pas fonctionnel
+    - Grrid diapo : Mauvaise taille
+    - Header en menu déroulant ? à voir
+    - Partie "Impact" à mettre en column
+    - Don : taille a revoir en full width
+    
     
 
 
