@@ -72,35 +72,11 @@ let mois1=document.getElementById("mois1")
 
 // Test / Quizz
 
-function ok(){
-
-let div = document.getElementById("reponse1");
-let contenu1 = document.getElementById("contenu1")
-
-        div.classList.add("vert");
-
-
-        if(contenu1.hasAttribute("hidden")){
-            document.getElementById("contenu1").removeAttribute("hidden")
-        }else{
-            document.getElementById("contenu1").setAttribute("hidden","")
-        }
-}
-
-function non(){
-
-    let div = document.getElementById("reponse1");
-    let contenu1 = document.getElementById("contenu1")
-
-    div.classList.add("rouge"); 
-
-    if(contenu1.hasAttribute("hidden")){
-        document.getElementById("contenu1").removeAttribute("hidden")
-        document.getElementById("c1").setAttribute("hidden","")
-    }else{
-        document.getElementById("contenu1").setAttribute("hidden","")
-    }
+function showAnswer(buttonsId, answerId) {
+    // Cacher uniquement les boutons
+    document.getElementById(buttonsId).style.display = 'none';
+    // Afficher la réponse
+    document.getElementById(answerId).style.display = 'flex';
 
     
-
-}
+  }
