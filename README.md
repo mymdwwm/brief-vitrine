@@ -28,18 +28,19 @@ Brief ECF 1 - Quatre pattes a besoin d'une nouvelle vitrine
     - Diaporama satisfaisant
     - Première version du JS (estimation fin le 30/01 17:30 - fin 23:30)
     - Une catégorie de don (boutton) fait en focus pas l'autre
-- Début du responsive (3h)
+- Début du responsive (4h)
     - hero : ok
+    - don : ok
     - mission : ok
-    - quizz : ok-
+    - quizz : ok
     - témoignane : ok
+    - contact : ok
 
 
 
 Ce qu'il reste à faire : 
 
 - Revoir les détails du CSS
-    - Revoir les effet de bouton de la partie "DON"
     - Réinitialiser ces bouton en js
     - Revoir les couleurs des reponses du "QUIZZ"
 
@@ -47,8 +48,7 @@ Ce qu'il reste à faire :
     - Footer en column full width pas fonctionnel
     - Grrid diapo : Mauvaise taille
     - Header en menu déroulant ? à voir
-    - Partie "Impact" à mettre en column
-    - Don : taille a revoir en full width
+    - Partie "Impact" à mettre en column (difficile)
     
     
 

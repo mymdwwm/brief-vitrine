@@ -8,13 +8,43 @@
 
     <!-- LIENS -->
     <link rel="stylesheet" href="css/global.css">
-    <script src="indexB1.js"></script>
 
 </head>
 
 <body>
     <!-- EN-TÊTE -->
-    <header>
+    <header class="header">
+        <div class="nav-desktop">
+            <img id="logo-desktop" class="logo" src="assetB1/paw-printbln.svg" alt="Logo de Quatre Pattes">
+            <p>Quatre Pattes</p>
+            <nav class="menu-desktop">
+                <a href="index.html">Accueil</a>
+                <a href="contact.html">Contact</a>
+                <button class="redbtn">
+                    <img src="assetB1/heartbl.svg" alt="Faire un don"> Faire un don
+                </button>
+            </nav>
+        </div>
+    
+        <div class="nav-mobile">
+            <div class="menu-header">
+                <img id="logo-mobile" class="logo" src="assetB1/paw-printbln.svg" alt="Logo de Quatre Pattes">
+                <p>Quatre Pattes</p>
+                <img id="menu-icon" class="menu-icon" src="assetB1/icone_x_blanc.webp" alt="Ouvrir/fermer le menu">
+            </div>
+            <div id="menu-content" class="menu-content">
+                <a href="indexB1.html">Accueil</a>
+                <a href="contactB1.html">Contact</a>
+                <button class="redbtn">
+                    <img src="assetB1/heartbl.svg" alt="Faire un don"> Faire un don
+                </button>
+            </div>
+        </div>
+    
+    
+    
+
+        <!--
         <a href="indexB1.html" aria-label="Retour à la page d'accueil">
             <img src="assetB1/paw-printbln.svg" alt="logo paw-print">
             <p>Quatre Pattes</p>
@@ -27,6 +57,8 @@
                 </li>
             </ul>
         </nav>
+        -->
+
     </header>
 
     <!-- CONTENUE PRINCIPALE -->
@@ -45,7 +77,7 @@
                         <p>permet de nourrir 5 animaux <br>
                             pendant une journée</p>
                     </div>
-                    <div class="centre contour" onclick="opt(1)">
+                    <div class="centre contour defaut" onclick="opt(1)">
                         <h3>20€</h3>
                         <p>permet d’héberger un animal <br>
                             sauvage pendant une nuit</p>
@@ -61,7 +93,7 @@
                 <div class="don">
                     <button onclick="opt(2)">Une fois</button>
                     <button onclick="opt(2)">Mensuel</button>
-                    <button onclick="opt(2)">Annuel</button>
+                    <button onclick="opt(2)" autofocus>Annuel</button>
                 </div>
 
                 <button class="redbtn full" onclick="submitForm()"><img src="assetB1/heartbl.svg" alt="">Faire un don de
@@ -244,6 +276,8 @@
             <li><a href="contactB1.html">Suivez-nous</a></li>
         </ul>
     </footer>
+
+    <script src="indexB1.js"></script>
 </body>
 
 </html>

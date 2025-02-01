@@ -80,3 +80,24 @@ function showAnswer(buttonsId, answerId) {
 
     
   }
+
+
+  // header
+
+  function toggleMenu() {
+    const menuContent = document.getElementById('menu-content');
+    const body = document.body;
+
+    // Basculer la classe 'show' sur le menu
+    menuContent.classList.toggle('show');
+
+    // Basculer la classe 'menu-open' sur le body pour décaler le contenu principal
+    if (menuContent.classList.contains('show')) {
+        body.classList.add('menu-open');
+    } else {
+        body.classList.remove('menu-open');
+    }
+}
+
+// Attache l'événement à l'icône du menu
+document.getElementById('menu-icon').onclick = toggleMenu;

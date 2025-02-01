@@ -40,12 +40,10 @@
 
 /* Par Titre */
 
-
 h1 {
     font-size: clamp(22px, 6.8vw, 68px);
     padding: 15px;
 }
-
 
 h4 {
     color: white;
@@ -62,6 +60,10 @@ h2 {
 
 
 /* Par cLASS */
+
+.defaut{
+    
+}
 
 .fondvert {
     background-color: var(--vertdeau);
@@ -114,7 +116,7 @@ form button,
     padding: 2.5vw;
 }
 
-.contour:hover {
+.defaut,.contour:hover {
     border: solid 2px var(--vertbtn);
     background-color: var(--vertdeau);
 }
@@ -407,76 +409,5 @@ button {
     border-radius: 6px;
     padding: 1vw;
     background-color: var(--quizzfaux);
-
-}
-
-@media (max-width : 768px) {
-
-    /* Section hero  fond */
-    #hero {
-        background-image: url(/imageB1/chiens-fondresp.png);
-    }
-
-
-
-    .don button{
-        padding: 1vw;
-    }
-
-    /* Section 2 : Mission */
-    .ligne {
-        flex-direction: column;
-        width: 90vw;
-    }
-
-    #S2 {
-        flex-direction: column;
-        padding: 8vw 0 8vw 0;
-    
-    }
-
-    .fond {
-        width: 90%;
-    }
-
-    .fondcham {
-        border-radius: 15px 15px 0 0;
-
-    }
-
-    .fondb {
-        border-radius: 0 0 15px 15px;
-        padding: 0 3rem 0 3rem;
-    }
-    .fondb p{
-        font-size: 20px;
-    }
-    .icone{
-        display: flex;
-        flex-direction: row;
-    }
-    .row{
-        display: flex;
-        flex-direction: column;
-    }
-    .tem,.descri{
-        width: 90vw;
-        height: 40vh;
-        font-size: 23px;
-    }
-    .descri p{
-        padding: 35px;
-    }
-
-    /* Bat de page : footer */
-   
-    footer ul{
-        flex-direction: column;
-    }
-    footer li{
-        width: 900px;
-    }
-   
-
 
 }

@@ -31,3 +31,83 @@ body{
  button,a:hover{
     cursor: pointer;
  }
+
+
+
+@media (max-width : 768px) {
+
+    /* Section hero  fond */
+    #hero {
+        background-image: url(/imageB1/chiens-fondresp.png);
+    }
+
+    .don button{
+        padding: 1vw;
+    }
+
+    /* Section 2 : Mission */
+    .ligne {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    #S2 {
+        flex-direction: column;
+        padding: 8vw 0 8vw 0;
+    }
+
+    .fond {
+        width: 90%;
+    }
+
+    .fondcham {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .fondb {
+        border-radius: 0 0 15px 15px;
+        padding: 0 3rem 0 3rem;
+    }
+
+    .fondb p{
+        font-size: 20px;
+    }
+
+    /* Témoignage */
+    .row{
+        display: flex;
+        flex-direction: column;
+        gap: 6vh;
+    }
+    .tem,.descri{
+        width: 90vw;
+        height: 40vh;
+        font-size: 23px;
+    }
+    .descri p{
+        padding: 35px;
+    }
+
+    /* S5 : impact */
+
+
+    /* Bat de page : footer */
+   
+    footer ul{
+        flex-direction: column;
+    }
+    footer li{
+        width: 900px;
+    }
+
+    .question{
+        margin: 18px;
+    }
+
+    /* Formulaire */
+    .taille{
+        width: 93%;
+    }
+
+
+}
