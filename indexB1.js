@@ -85,7 +85,7 @@ function showAnswer(buttonsId, answerId) {
   // header
 
   function toggleMenu() {
-    const menuContent = document.getElementById('menu-content');
+    const menuContent = document.getElementById('menu');
     const body = document.body;
 
     // Basculer la classe 'show' sur le menu
@@ -100,4 +100,4 @@ function showAnswer(buttonsId, answerId) {
 }
 
 // Attache l'événement à l'icône du menu
-document.getElementById('menu-icon').onclick = toggleMenu;
+document.getElementById('croix').onclick = toggleMenu;

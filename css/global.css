@@ -70,7 +70,7 @@ body{
     }
 
     .fondb p{
-        font-size: 20px;
+        font-size: 18px;
     }
 
     /* Témoignage */
@@ -87,6 +87,17 @@ body{
     .descri p{
         padding: 35px;
     }
+
+
+    .grid {
+        grid-template-columns: repeat(3, minmax(80px, 1fr)); /* Colonnes plus petites */
+        padding: 2rem;
+    }
+    #luna{
+        height: 42vh;
+    }
+
+
 
     /* S5 : impact */
 

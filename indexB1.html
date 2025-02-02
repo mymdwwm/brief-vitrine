@@ -13,10 +13,11 @@
 
 <body>
     <!-- EN-TÊTE -->
+    <!--Nav version desktop -->
     <header class="header">
         <div class="nav-desktop">
-            <img id="logo-desktop" class="logo" src="assetB1/paw-printbln.svg" alt="Logo de Quatre Pattes">
-            <p>Quatre Pattes</p>
+            <p><img id="logo-desktop" class="logo" src="assetB1/paw-printbln.svg" alt="Logo de Quatre Pattes">Quatre
+                Pattes</p>
             <nav class="menu-desktop">
                 <a href="index.html">Accueil</a>
                 <a href="contact.html">Contact</a>
@@ -25,40 +26,21 @@
                 </button>
             </nav>
         </div>
-    
+        <!--Nav version mobile -->
         <div class="nav-mobile">
             <div class="menu-header">
-                <img id="logo-mobile" class="logo" src="assetB1/paw-printbln.svg" alt="Logo de Quatre Pattes">
-                <p>Quatre Pattes</p>
-                <img id="menu-icon" class="menu-icon" src="assetB1/icone_x_blanc.webp" alt="Ouvrir/fermer le menu">
+                <p><img id="logo-mobile" class="logo" src="assetB1/paw-printbln.svg" alt="Logo de Quatre Pattes">Quatre
+                    Pattes</p>
+                <img id="croix" class="croix" src="assetB1/icone_x_blanc.webp" alt="Ouvrir/fermer le menu">
             </div>
-            <div id="menu-content" class="menu-content">
+            <div id="menu" class="menu">
                 <a href="indexB1.html">Accueil</a>
                 <a href="contactB1.html">Contact</a>
-                <button class="redbtn">
+                <button class="redbtn full2">
                     <img src="assetB1/heartbl.svg" alt="Faire un don"> Faire un don
                 </button>
             </div>
         </div>
-    
-    
-    
-
-        <!--
-        <a href="indexB1.html" aria-label="Retour à la page d'accueil">
-            <img src="assetB1/paw-printbln.svg" alt="logo paw-print">
-            <p>Quatre Pattes</p>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="indexB1.html">Accueil</a></li>
-                <li><a href="contactB1.html">Contact</a></li>
-                <li><button class="redbtn"><img src="assetB1/heartbl.svg" alt="icone coeur vide">Faire un don</button>
-                </li>
-            </ul>
-        </nav>
-        -->
-
     </header>
 
     <!-- CONTENUE PRINCIPALE -->
@@ -68,7 +50,7 @@
             <p>Chaque don compte pour leur offrir une vie meilleure</p>
         </section>
         <!-- S1 : Don -->
-        <section id="S1" class="centre">
+        <section id="S1" class="centre column">
             <h2>Faites un don</h2>
             <div class="shadow">
                 <div class="ligne cat" id="cat1">
@@ -121,7 +103,7 @@
         </section>
 
         <!-- S3 : Histoires -->
-        <section id="S3">
+        <section id="S3" class="column">
             <h2>Histoires de Réussite</h2>
             <div class="grid">
                 <div id="luna">
@@ -147,7 +129,7 @@
         </section>
 
         <!-- S4 : Test -->
-        <section id="S4" class="fondvert centre">
+        <section id="S4" class="fondvert centre column">
             <h2>Testez Vos Connaissances</h2>
 
             <div id="question1" class="question card">
