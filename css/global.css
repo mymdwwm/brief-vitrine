@@ -39,6 +39,9 @@ body{
     /* Section hero  fond */
     #hero {
         background-image: url(/imageB1/chiens-fondresp.png);
+        background-position:center ;
+        background-size: contain;
+        height:42.8vh ;
     }
 
     .don button{
@@ -49,6 +52,23 @@ body{
     .ligne {
         flex-direction: column;
         width: 90vw;
+        font-size: 12px;
+    }
+
+    .contour{
+        height: auto;
+    }
+
+    .contour br{
+        display: none;
+    }
+
+    .contour h3{
+        font-size: 22px;
+    }
+
+    .don button{
+        margin: 2vh 0.5vw 2vh 0.5vw;
     }
 
     #S2 {
@@ -62,53 +82,56 @@ body{
 
     .fondcham {
         border-radius: 15px 15px 0 0;
+        height: 28vh;
     }
 
     .fondb {
         border-radius: 0 0 15px 15px;
-        padding: 0 3rem 0 3rem;
+        padding: 0 1.5rem 2rem 1.5rem;
+        height: auto;
     }
 
     .fondb p{
-        font-size: 18px;
+        font-size: 12px;
+        line-height: 18px;
     }
 
-    /* Témoignage */
-    .row{
-        display: flex;
-        flex-direction: column;
-        gap: 6vh;
+    #S3 h2{
+        padding-bottom: 0;
     }
-    .tem,.descri{
-        width: 90vw;
-        height: 40vh;
-        font-size: 23px;
-    }
-    .descri p{
-        padding: 35px;
-    }
-
 
     .grid {
         grid-template-columns: repeat(3, minmax(80px, 1fr)); /* Colonnes plus petites */
-        padding: 2rem;
+        padding: 1.3rem;
     }
     #luna{
-        height: 42vh;
+        height: 40vh;
+    }
+    /* S5 : impact */
+    #icone{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
     }
 
-
-
-    /* S5 : impact */
-
-
+   /* Témoignage */
+   .row{
+    display: flex;
+    flex-direction: column;
+    gap: 2.7vh;
+}
+.descri{
+    height: 11vh;
+    padding: 1rem;
+    font-size: 13px;
+}
     /* Bat de page : footer */
    
     footer ul{
         flex-direction: column;
     }
     footer li{
-        width: 900px;
+        width: 90%;
     }
 
     .question{

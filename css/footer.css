@@ -3,24 +3,26 @@
 footer{
     color: white;
     background-color: var(--bleufooter);
-    height: 145px;
+    height: 30vh;
     justify-content: space-around;
 }
 
 footer a{
     color: white;
     padding-bottom: 2vw;
+    text-decoration: none;
     
 }
 
 footer li{
     width: 24vw;
+    list-style: none;
+    padding-top: 2vh;
 }
 
-footer ul{
-    gap: 4vw;
+footer img{
+    padding-right: 0.5rem;
 }
-
 
 .tin, .centre li p{
     font-weight: 200;
