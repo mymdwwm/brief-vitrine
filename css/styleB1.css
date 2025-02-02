@@ -27,7 +27,7 @@
 }
 
 #S4 {
-    padding-bottom: 4vw;
+    padding-bottom: 4vh;
 }
 
 #S6,
@@ -94,6 +94,9 @@ form button,
     padding: 6vw;
 }
 
+.grid h2 {
+    grid-row: 1/2;
+}
 
 /*
 .grid {
@@ -282,23 +285,18 @@ small {
     font-size: clamp(11px, 3.5vw, 26px);
 }
 
-
-.grid h2 {
-    grid-row: 1/2;
-}
-
 .card {
     background-color: white;
     border-radius: 11px;
-    padding: 2vw;
-    margin: 1vw;
-    width: clamp(720px,70vw,813px);
-    height: clamp(143px,20vh,153px);
+    padding: 2vh;
+    margin: 2vh;
+    width: clamp(80vw, 100vw, 90vw);
+height: clamp(10vh, 17vh, 22vh);
     box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
 }
 
 .card button {
-    height: 68px;
+    height: clamp(7vh,7vh,12vh);
     width: 49%;
     font-size: 16px;
     text-align: left;
