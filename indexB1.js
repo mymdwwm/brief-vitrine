@@ -72,11 +72,11 @@ let mois1=document.getElementById("mois1")
 
 // Test / Quizz
 
-function showAnswer(buttonsId, answerId) {
+function deroule(buttonsId, reponseId) {
     // Cacher uniquement les boutons
     document.getElementById(buttonsId).style.display = 'none';
     // Afficher la réponse
-    document.getElementById(answerId).style.display = 'flex';
+    document.getElementById(reponseId).style.display = 'flex';
 
     
   }
