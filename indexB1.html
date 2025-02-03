@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> ECF N°1 </title>
-
     <!-- LIENS -->
     <link rel="stylesheet" href="css/global.css">
-
+    <link rel="icon" type="image" href="assetB1/paw-printbln.svg">
 </head>
 
 <body>
@@ -19,8 +18,8 @@
             <p><img id="logo-desktop" class="logo" src="assetB1/paw-printbln.svg" alt="Logo de Quatre Pattes">Quatre
                 Pattes</p>
             <nav class="menu-desktop">
-                <a href="index.html">Accueil</a>
-                <a href="contact.html">Contact</a>
+                <a href="indexB1.html">Accueil</a>
+                <a href="contactB1.html">Contact</a>
                 <button class="redbtn">
                     <img src="assetB1/heartbl.svg" alt="Faire un don"> Faire un don
                 </button>
@@ -42,47 +41,43 @@
             </div>
         </div>
     </header>
-
     <!-- CONTENUE PRINCIPALE -->
     <main> <!-- Hero -->
-        <section id="hero" class="centre">
+        <section id="hero" class="centre column">
             <h1>Protégeons-les Ensemble</h1>
             <p>Chaque don compte pour leur offrir une vie meilleure</p>
         </section>
         <!-- S1 : Don -->
         <section id="S1" class="centre column">
             <h2>Faites un don</h2>
-            <div class="shadow">
+            <div class="shadow column">
                 <div class="ligne cat" id="cat1">
-                    <div class="centre contour" onclick="opt(1)">
+                    <div class="centre contour" onclick="optMontant(10)">
                         <h3>10€</h3>
                         <p>permet de nourrir 5 animaux <br>
                             pendant une journée</p>
                     </div>
-                    <div class="centre contour defaut foon" onclick="opt(1)">
+                    <div class="centre contour defaut foon" onclick="optMontant(20)">
                         <h3>20€</h3>
                         <p>permet d’héberger un animal <br>
                             sauvage pendant une nuit</p>
                     </div>
-                    <div class="centre contour" onclick="opt(1)">
+                    <div class="centre contour" onclick="optMontant(50)">
                         <h3>50€</h3>
                         <p>permet de financer les soins <br>
                             vétérinaires complet pour un <br>
                             animal</p>
                     </div>
                 </div>
-
                 <div class="don">
-                    <button onclick="opt(2)">Une fois</button>
-                    <button onclick="opt(2)">Mensuel</button>
-                    <button onclick="opt(2)" autofocus>Annuel</button>
+                    <button onclick="optFrequence('Une fois')">Une fois</button>
+                    <button onclick="optFrequence('Mensuel')">Mensuel</button>
+                    <button onclick="optFrequence('Annuel')" autofocus>Annuel</button>
                 </div>
-
                 <button class="redbtn full" onclick="submitForm()"><img src="assetB1/heartbl.svg" alt="">Faire un don de
                     50€/mois</button>
             </div>
         </section>
-
         <!-- S2 : Mission -->
         <section id="S2" class="fondvert">
             <div class="fondcham fond"></div>
@@ -101,12 +96,11 @@
                     pouvons faire la différence pour ces êtres qui comptent sur nous.</p>
             </div>
         </section>
-
         <!-- S3 : Histoires -->
         <section id="S3" class="column">
             <h2>Histoires de Réussite</h2>
             <div class="grid">
-                <div id="luna">
+                <div id="luna" class="column">
                     <h4 id="h4">Luna</h4>
                     <p id="histoire">Trouvée dans la rue avec une patte cassée, Luna a été soignée et a retrouvé sa joie
                         de vivre.
@@ -124,60 +118,46 @@
                     <h4>Max</h4>
                 </div>
             </div>
-
-
         </section>
-
         <!-- S4 : Test -->
         <section id="S4" class="fondvert centre column">
             <h2>Testez Vos Connaissances</h2>
-
             <div id="question1" class="question card">
                 <p>Les associations gardent la majorité des dons pour leur fonctionnement</p>
                 <div id="buttons1">
-                    <button onclick="deroule('buttons1', 'reponse1')">Vrai</button>
-                    <button onclick="deroule('buttons1', 'reponse1')">Faux</button>
+                    <button onclick="deroule(1, 'Vrai')">Vrai</button>
+                    <button onclick="deroule(1, 'Faux')">Faux</button>
                 </div>
-
                 <div id="reponse1" class="answer" style="display: none;">
-                    <p>Faux ! Chez Quatre Pattes, 85% des dons sont directement utilisés pour les animaux. Seuls 15%
-                        servent
+                    <p>Chez Quatre Pattes, 85% des dons sont directement utilisés pour les animaux. Seuls 15% servent
                         aux frais de fonctionnement essentiels.</p>
                 </div>
             </div>
-
             <div id="question2" class="question card">
                 <p>Les refuges ne prennent que les animaux en bonne santé</p>
                 <div id="buttons2">
-                    <button onclick="deroule('buttons2', 'reponse2')">Vrai</button>
-                    <button onclick="deroule('buttons2', 'reponse2')">Faux</button>
-
+                    <button onclick="deroule(2, 'Vrai')">Vrai</button>
+                    <button onclick="deroule(2, 'Faux')">Faux</button>
                 </div>
                 <div id="reponse2" class="answer" style="display: none;">
-                    <p>Faux ! Nous accueillons tous les animaux, quel que soit leur état de santé. Chaque vie compte !
-                    </p>
+                    <p>Nous accueillons tous les animaux, quel que soit leur état de santé. Chaque vie compte !</p>
                 </div>
             </div>
-
             <div id="question3" class="question card">
                 <p>Les associations ont trop de moyens grâce aux dons</p>
                 <div id="buttons3">
-                    <button onclick="deroule('buttons3', 'reponse3')">Vrai</button>
-                    <button onclick="deroule('buttons3', 'reponse3')">Faux</button>
+                    <button onclick="deroule(3, 'Vrai')">Vrai</button>
+                    <button onclick="deroule(3, 'Faux')">Faux</button>
                 </div>
-
                 <div id="reponse3" class="answer" style="display: none;">
-                    <p>Faux ! Les besoins sont immenses et constants. Chaque don est précieux pour sauver plus
-                        d'animaux.
-                    </p>
+                    <p>Les besoins sont immenses et constants. Chaque don est précieux pour sauver plus d'animaux.</p>
                 </div>
             </div>
-
-
+            <!-- Score final -->
+            <div id="score" class="score" style="display: none;"> Votre Score est de : 0 / 3 !</div>
         </section>
-
         <!-- S5 : Impact -->
-        <section id="S5" class="fondvert container">
+        <section id="S5" class="fondvert column">
             <h2>Notre Impact</h2>
             <div class="icone" id="icone">
                 <div>
@@ -200,9 +180,8 @@
                 </div>
             </div>
         </section>
-
         <!-- S6 : Témoignages -->
-        <section id="S6" class="centre temoin">
+        <section id="S6" class="centre column">
             <h2>Témoignages</h2>
             <div class="row">
                 <div>
@@ -214,7 +193,6 @@
                         </p>
                     </div>
                 </div>
-
                 <div>
                     <div class="tem tem2"></div>
                     <div class="descri">
@@ -225,7 +203,6 @@
                         </p>
                     </div>
                 </div>
-
                 <div>
                     <div class="tem tem3"></div>
                     <div class="descri">
@@ -238,9 +215,7 @@
 
             </div>
         </section>
-
     </main>
-
     <!-- BAT DE PAGE -->
     <footer>
         <ul class="centre">
@@ -258,7 +233,6 @@
             <li><a href="contactB1.html">Suivez-nous</a></li>
         </ul>
     </footer>
-
     <script src="indexB1.js"></script>
 </body>
 

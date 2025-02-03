@@ -1,19 +1,23 @@
-
-.header {
-    width: 100%;
-    background-color: var(--vertfonce); 
-    display: flex;
-    justify-content: space-between; /* espacemeent !!*/
-    padding: 1rem 2rem ;
-}
-
-header p{
+/* Page style d'en-tête */
+/* Par éléments */
+header p {
     font-weight: 500;
     font-size: 21px;
     color: white;
 }
-header a{
+
+header a {
     font-weight: 200;
+}
+
+/* Page class */
+.header {
+    width: 100%;
+    background-color: var(--vertfonce);
+    display: flex;
+    justify-content: space-between;
+    /* espacemeent !!*/
+    padding: 1rem 2rem;
 }
 
 .logo {
@@ -42,31 +46,31 @@ header a{
     font-size: 1.2rem;
 }
 
-.redbtn{
+.redbtn {
     display: flex;
     align-items: center;
     background-color: var(--rouge);
     color: white;
     font-size: 15px;
     border: solid 5px var(--rouge);
-    }
+}
 
 
-    .redbtn:hover{
-        background-color: coral;
-        border: solid 5px coral;
-    }
-    
-    .redbtn:focus{
-        background-color: brown;
-        border: solid 5px brown;
-    }
-    
-    .redbtn img,
-    form button img{
+.redbtn:hover {
+    background-color: coral;
+    border: solid 5px coral;
+}
+
+.redbtn:focus {
+    background-color: brown;
+    border: solid 5px brown;
+}
+
+.redbtn img,
+form button img {
     height: 21px;
     padding-right: 8px;
-    }
+}
 
 /* Mobile Navigation */
 .nav-mobile {
@@ -82,41 +86,23 @@ header a{
     padding: 1rem;
 }
 
-.menu-header p,.nav-desktop p{
+.menu-header p,
+.nav-desktop p {
     display: flex;
-    align-items: center;    
+    align-items: center;
 }
 
-.croix{
+.croix {
     width: 20px;
     height: 20px;
     cursor: pointer;
 }
 
-
-/* Masque le menu par défaut */
-#menu{
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    
-    background-color: var(--vertfonce);
-    padding: 0  1rem 1rem 1rem;
-    position: relative; /* Pas de position absolue pour qu'il prenne de l'espace */
-    width: 100%;
-    z-index: 1000;
-}
-
-/* Classe pour afficher le menu et le décaler */
-#menu.show {
-    display: flex; /* Le menu s'affiche */
-}
-
 /* Décale le contenu principal quand le menu est ouvert */
 body.menu-open {
-    transition: margin-top 0.3s ease; /* Ajoute une animation douce */
+    transition: margin-top 0.3s ease;
+    /* Ajoute une animation douce */
 }
-
 
 .menu a {
     text-decoration: none;
@@ -131,23 +117,43 @@ body.menu-open {
     display: flex;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    header p{
-        font-size: 17px;
-    }
-    .nav-desktop {
-        display: none;
-    }
-    .nav-mobile {
-        display: flex;
-    }
-    .header{
-        padding: 0;
-    }
+/* Page ID*/
+/* Masque le menu par défaut */
+#menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--vertfonce);
+    padding: 0 1rem 1rem 1rem;
+    position: relative;
+    /* Pas de position absolue pour qu'il prenne de l'espace */
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Classe pour afficher le menu et le décaler */
+#menu.show {
+    display: flex;
+    /* Le menu s'affiche */
 }
 
 
+/* Responsive */
+@media (max-width: 768px) {
+    header p {
+        font-size: 17px;
+    }
 
+    .nav-desktop {
+        display: none;
+    }
 
+    .nav-mobile {
+        display: flex;
+    }
 
+    .header {
+        padding: 0;
+    }
+}

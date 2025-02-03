@@ -6,16 +6,13 @@
     background-position-y: center;
     background-repeat: no-repeat;
     background-size: cover;
-    flex-direction: column;
     justify-content: center;
     color: white;
     height: 78vh;
-
-
 }
 
-.column{
-    flex-direction: column;
+#hero p {
+    font-size: clamp(11px, 3.5vw, 26px);
 }
 
 #S1 {
@@ -35,6 +32,26 @@
     padding-bottom: 4vw;
 }
 
+#luna {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+        url("/imageB1/chien-luna.png") center/cover no-repeat;
+    padding: 5vw;
+    height: 475px;
+    border-radius: 13px;
+    color: white;
+    font-size: clamp(11px, 13px, 17px);
+    line-height: 20px;
+    font-weight: 200;
+    display: flex;
+    justify-content: end;
+    grid-column: 1/4;
+    grid-row: 2/5;
+    gap: 10px;
+}
+
+#luna h4 {
+    font-size: 22px;
+}
 
 /* Par Titre */
 
@@ -56,11 +73,7 @@ h2 {
     padding: 4.5vh 0 3.5vh 0;
 }
 
-/* Par cLASS */
-.fondvert {
-    background-color: var(--vertdeau);
-    justify-content: center;
-}
+/* Par CLASS */
 
 #S4,
 #S3,
@@ -84,11 +97,22 @@ form button,
     align-items: center;
 }
 
+.column,
+.contour {
+    flex-direction: column;
+}
+
+.fondvert {
+    background-color: var(--vertdeau);
+    justify-content: center;
+}
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(100px, 1fr)); /* 3 colonnes flexibles */
-    grid-template-rows: 20px repeat(4, 1fr); /* 5 lignes */
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    /* 3 colonnes flexibles */
+    grid-template-rows: 20px repeat(4, 1fr);
+    /* 5 lignes */
     row-gap: 1vw;
     column-gap: 0.5vh;
     padding: 6vw;
@@ -99,14 +123,14 @@ form button,
 }
 
 .contour {
-    flex-direction: column;
     border: solid 2px var(--grisbtn);
     border-radius: 7px;
     height: 150px;
     padding: 2.5vw;
 }
 
-.defaut,.contour:hover {
+.defaut,
+.contour:hover {
     border: solid 2px var(--vertbtn);
     background-color: var(--vertdeau);
 }
@@ -117,8 +141,6 @@ form button,
 }
 
 .shadow {
-    flex-direction: column;
-
     box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     padding: 0 2vw 3vw 2vw;
@@ -129,7 +151,8 @@ form button,
     justify-content: center;
     width: 96%;
 }
-.full2{
+
+.full2 {
     justify-content: flex-start;
     width: 100%;
 }
@@ -153,7 +176,7 @@ form button,
     font-size: 15px;
     padding: 1vw;
     margin: 0.5vw;
-    
+
 }
 
 .don button:hover {
@@ -189,42 +212,16 @@ form button,
     border-bottom-right-radius: 15px;
 }
 
-.fondb p{
+.fondb p {
     font-size: 15px;
     color: rgb(90, 88, 88);
 }
-
-#luna {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
-    url("/imageB1/chien-luna.png") center/cover no-repeat;
-    padding: 5vw;
-    height: 475px;
-    border-radius: 13px;
-    color: white;
-    font-size: clamp(11px,13px,17px);
-    line-height: 20px;
-    font-weight: 200;
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    grid-column: 1/4;
-    grid-row: 2/5;
-    gap: 10px;
-}
-
-#luna h4 {
-    font-size: 22px;
-}
-
-
 
 .date {
     font-weight: 300;
     color: gray;
     font-size: 13px;
 }
-
-
 
 .lunamin {
     background-image: url(/imageB1/chien-luna.png);
@@ -236,10 +233,6 @@ form button,
 
 .maxmin {
     background-image: url(/imageB1/chien-max.png);
-}
-
-.container {
-    flex-direction: column;
 }
 
 .icone {
@@ -254,29 +247,18 @@ form button,
     margin-bottom: 1vw;
 }
 
-small {
-    padding-top: 1vw;
-    font-size: 14px;
-    font-weight: 200;
-}
-
-/* Par Éléments */
-#hero p {
-    font-size: clamp(11px, 3.5vw, 26px);
-}
-
 .card {
     background-color: white;
     border-radius: 11px;
     padding: 2vh;
     margin: 2vh;
     width: clamp(80vw, 100vw, 90vw);
-height: clamp(10vh, 17vh, 22vh);
+    height: clamp(10vh, 17vh, 22vh);
     box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
 }
 
 .card button {
-    height: clamp(7vh,7vh,12vh);
+    height: clamp(7vh, 7vh, 12vh);
     width: 49%;
     font-size: 16px;
     text-align: left;
@@ -292,14 +274,9 @@ height: clamp(10vh, 17vh, 22vh);
     padding-bottom: 0.5vw;
 }
 
-button {
-    border: none;
-    border-radius: 7px;
-    padding: 7px 9px 7px 9px;
-}
 
 .descri {
-    height: clamp(11vh,18vh,150px);
+    height: clamp(11vh, 18vh, 150px);
     width: 373px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -310,7 +287,7 @@ button {
 }
 
 .tem {
-    height: clamp(16vh,20vh,150px);
+    height: clamp(16vh, 20vh, 150px);
     width: 373px;
     background-size: cover;
     background-position: center;
@@ -327,10 +304,6 @@ button {
 
 .tem3 {
     background-image: url(/imageB1/humain-chat.png);
-}
-
-.temoin {
-    flex-direction: column;
 }
 
 .row {
@@ -368,14 +341,7 @@ button {
     display: none;
 }
 
-
-
-
-
-
 /* QUIZZ */
-
-
 .feedback {
     display: none;
 }
@@ -384,12 +350,23 @@ button {
     border-radius: 6px;
     padding: 1vw;
     background-color: var(--quizzvrai);
-
 }
 
 .incorrect {
     border-radius: 6px;
     padding: 1vw;
     background-color: var(--quizzfaux);
+}
 
+/* Par Éléments */
+small {
+    padding-top: 1vw;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+button {
+    border: none;
+    border-radius: 7px;
+    padding: 7px 9px 7px 9px;
 }

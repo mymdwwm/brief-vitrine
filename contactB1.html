@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,72 +10,92 @@
     <script src="contactB1.js"></script>
 
 </head>
+
 <body>
-      <!-- EN-TÊTE --> 
-      <header>
-        <a href="indexB1.html" aria-label="Retour à la page d'accueil">
-            <img src="assetB1/paw-printbln.svg" alt="logo paw-print">
-            <p>Quatre Pattes</p>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="indexB1.html">Accueil</a></li>
-                <li><a href="contactB1.html">Contact</a></li>
-                <li><button class="redbtn"><img src="assetB1/heartbl.svg" alt="icone coeur vide">Faire un don</button></li>
-            </ul>
-        </nav>
+    <!-- EN-TÊTE -->
+    <!-- EN-TÊTE -->
+    <!--Nav version desktop -->
+    <header class="header">
+        <div class="nav-desktop">
+            <p><img id="logo-desktop" class="logo" src="assetB1/paw-printbln.svg" alt="Logo de Quatre Pattes">Quatre
+                Pattes</p>
+            <nav class="menu-desktop">
+                <a href="indexB1.html">Accueil</a>
+                <a href="contactB1.html">Contact</a>
+                <button class="redbtn">
+                    <img src="assetB1/heartbl.svg" alt="Faire un don"> Faire un don
+                </button>
+            </nav>
+        </div>
+        <!--Nav version mobile -->
+        <div class="nav-mobile">
+            <div class="menu-header">
+                <p><img id="logo-mobile" class="logo" src="assetB1/paw-printbln.svg" alt="Logo de Quatre Pattes">Quatre
+                    Pattes</p>
+                <img id="croix" class="croix" src="assetB1/icone_x_blanc.webp" alt="Ouvrir/fermer le menu">
+            </div>
+            <div id="menu" class="menu">
+                <a href="indexB1.html">Accueil</a>
+                <a href="contactB1.html">Contact</a>
+                <button class="redbtn full2">
+                    <img src="assetB1/heartbl.svg" alt="Faire un don"> Faire un don
+                </button>
+            </div>
+        </div>
     </header>
 
     <main>
         <section id="S7">
             <h2>Contactez-nous</h2>
-        <div class="taille">
-            <form onsubmit="return confirmation()">
-                <!--NOM-->
-                <label for="nom">Nom</label>
-                <input type="text" id="nom">
-                <div id="errnom" class="err"></div>
-                <!--EMAIL-->
-                <label for="email">Email</label>
-                <input type="text" id="email">
-                <div id="erremail" class="err"></div>
-                <!--SUJET-->
-                <label for="sujet">Sujet</label>
-                <select name="sujet" id="sujet">
-                    <option value="">Question sur les dons</option>
-                    <option value="">Faire un don</option>
-                    <option value="">Devenir bénévole</option>
-                    <option value="">Question générale</option>
-                </select>
-                <div id="errsujet" class="err"></div>
-                <!--MESSAGE-->
-                <label for="message">Message</label>
-                <textarea name="message" id="message"></textarea>
-                <div id="errmess" class="err"></div>
-                <!--ENVOIE-->
-                <button type="submit"><img src="assetB1/sendbl.svg" alt="icon envoie">Envoyer</button>
-            </form>
-        </div>    
+            <div class="taille">
+                <form onsubmit="return confirmation()">
+                    <!--NOM-->
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom">
+                    <div id="errnom" class="err"></div>
+                    <!--EMAIL-->
+                    <label for="email">Email</label>
+                    <input type="text" id="email">
+                    <div id="erremail" class="err"></div>
+                    <!--SUJET-->
+                    <label for="sujet">Sujet</label>
+                    <select name="sujet" id="sujet">
+                        <option value="">Question sur les dons</option>
+                        <option value="">Faire un don</option>
+                        <option value="">Devenir bénévole</option>
+                        <option value="">Question générale</option>
+                    </select>
+                    <div id="errsujet" class="err"></div>
+                    <!--MESSAGE-->
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                    <div id="errmess" class="err"></div>
+                    <!--ENVOIE-->
+                    <button type="submit"><img src="assetB1/sendbl.svg" alt="icon envoie">Envoyer</button>
+                </form>
+            </div>
         </section>
     </main>
 
 
-   <!-- BAT DE PAGE -->
-   <footer>
-    <ul class="centre">
-        <li>
-            <a href="indexB1.html">Quatre Pattes</a>
-            <p>Ensemble, protégeons les animaux et donnons-leur
-                une vie meilleure.</p>
-        </li>
-        <li>
-            <a href="contactB1.html">Contact</a>
-            
-            <a href="mailto:contact@quatrepattes.org" class="tin">
-                <img src="assetB1/mail.svg" alt="">contact@quatrepattes.org</a>
-        </li>
-        <li><a href="contactB1.html">Suivez-nous</a></li>
-    </ul>
+    <!-- BAT DE PAGE -->
+    <footer>
+        <ul class="centre">
+            <li>
+                <a href="indexB1.html">Quatre Pattes</a>
+                <p>Ensemble, protégeons les animaux et donnons-leur
+                    une vie meilleure.</p>
+            </li>
+            <li>
+                <a href="contactB1.html">Contact</a>
+
+                <a href="mailto:contact@quatrepattes.org" class="tin">
+                    <img src="assetB1/mail.svg" alt="">contact@quatrepattes.org</a>
+            </li>
+            <li><a href="contactB1.html">Suivez-nous</a></li>
+        </ul>
     </footer>
+    <script src="indexB1.js"></script>
 </body>
+
 </html>
